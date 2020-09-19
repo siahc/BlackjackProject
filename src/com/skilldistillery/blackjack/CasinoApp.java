@@ -21,7 +21,7 @@ public class CasinoApp {
 
 		while (true) {
 			System.out.println();
-			System.out.println("Would you like to play a game? Please  " + "select 'y' or 'n'. ");
+			System.out.println("Would you like to play a game? Please  " + "select 'y' or 'n'. Select 'd' to reaveal a shuffled deck. ");
 			String selection = input.nextLine();
 
 			switch (selection) {
@@ -32,6 +32,11 @@ public class CasinoApp {
 			case "n": {
 				exit();
 				return;
+			}
+			case "d":{
+				d.shuffleDeck();
+				d.showDeck();
+				break;
 			}
 			default: {
 				System.out.println("Invalid entry. Please sect'y' or 'n'. ");

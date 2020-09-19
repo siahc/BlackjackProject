@@ -35,6 +35,13 @@ public class Deck {
 	public Card dealCard() {
 		return cards.remove(0);
 	}
+	// This is to show the shuffled deck in menu
+	public void show() {
+		for (int i = 0; i < cards.size(); i++) {
+			System.out.println(cards.get(i));
+		}
+		
+	}
 	
 	// User Story #2
 	// ... You should be able to print out a shuffled deck to the terminal.

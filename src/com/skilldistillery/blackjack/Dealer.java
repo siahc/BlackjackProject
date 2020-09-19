@@ -22,5 +22,8 @@ public class Dealer extends Player{
 	public void showUpCard() {
 		System.out.println("Dealer's up card is: " + bjHand.getCards().get(0));
 	}
+	public void showDeck() {
+		deck.show();
+	}
 
 }
