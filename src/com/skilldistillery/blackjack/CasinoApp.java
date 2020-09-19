@@ -24,6 +24,8 @@ public class CasinoApp {
 		Player player = new Player();
 		
 		dealer.shuffleDeck();
+		player.takeCard(dealer.dealCard());
+		
 		
 		
 			break;
@@ -43,8 +45,8 @@ public class CasinoApp {
 
 	private void launch() {
 		// TODO Auto-generated method stub
-		load();
-		menu();
+//		load();
+//		menu();
 
 	}
 
