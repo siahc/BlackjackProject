@@ -11,7 +11,11 @@ public class Deck {
 		cards = createDeck();
 	}
 	
-	private List<Card> createDeck(){
+	public void resetDeck() {
+		cards = createDeck();
+	}
+	
+	public List<Card> createDeck(){
 		List<Card> deck = new ArrayList<>(52);
 		for(Suit s : Suit.values()) {
 			for(Rank r : Rank.values()) {
@@ -30,5 +34,13 @@ public class Deck {
 	}
 	public Card dealCard() {
 		return cards.remove(0);
+	}
+	
+	// User Story #2
+	// ... You should be able to print out a shuffled deck to the terminal.
+	// This is not called in our blackjack program (nobody should be peeking into the deck, either dealer or player)
+	// but it is possible to print a deck when debugging.
+	public String toString() {
+		return "Deck [cards=" + cards + "]";
 	}
 }

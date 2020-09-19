@@ -22,5 +22,8 @@ public class Player {
 	public void clearHand() {
 		bjHand.clear();
 	}
+	public boolean isBust() {
+		return bjHand.isBust();
+	}
 	
 }
